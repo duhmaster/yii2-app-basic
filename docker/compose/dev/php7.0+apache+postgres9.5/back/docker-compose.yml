@@ -1,0 +1,31 @@
+version: '2'
+services:
+  web:
+    build: web
+    ports:
+      - "80:80"
+    volumes:
+      - ../../../../..:/var/www/app
+    links:
+      - db
+      - memcached
+      - mailserver
+    environment:
+      XDEBUG_CONFIG: remote_host=${HOST_IP_ADDRESS}
+  db:
+    image: chudoyoudo/postgres9.5:0.1.1
+    volumes:
+          - ${DUMP_PATH}:/dump
+  pgadmin:
+    image: fenglc/pgadmin4
+    links:
+      - db
+    ports:
+      - "5050:5050"
+  mailserver:
+    image: djfarrelly/maildev
+    ports:
+      - "1080:80"
+      - "25:25"
+  memcached:
+    image: memcached:1.4
