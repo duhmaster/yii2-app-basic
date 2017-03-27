@@ -13,3 +13,4 @@ RUN apt-get update \
     && a2ensite app \
     && service apache2 restart
 
+WORKDIR /var/www/app

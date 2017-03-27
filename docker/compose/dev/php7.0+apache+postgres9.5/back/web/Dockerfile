@@ -1,4 +1,4 @@
-FROM chudoyoudo/php7.0-apache:0.1.2
+FROM chudoyoudo/php7.0-apache:0.1.3
 
 RUN apt-get install -y curl git \
     && pecl install xdebug \
