@@ -1,4 +1,6 @@
-# Docker for app: how to
+# Установка окружения и запуск приложения
+
+[Назад](/README.md)
 
 Подготовка:
 - Установить docker (http://bfy.tw/AhnJ)
@@ -10,7 +12,7 @@
 
 Запуск:
 
-```docker/compose/dev/php7.0+apache+postgres9.5/back/run.sh [#host_ip#] [#dump_path#]```
+```sh docker/compose/dev/php7.0+apache+postgres9.5/back/run.sh [#host_ip#] [#dump_path#]```
 
  - [#host_ip#] - Необязательный параметр. IP хост машины. нужен чтобы заработал дебаг.
  - [#ump_path#] - Необязательный параметр. Путь до папки, где лежит дамп базы, 
@@ -19,7 +21,7 @@
 
 Остановка:
 
-```docker/compose/dev/php7.0+apache+postgres9.5/back/stop.sh``` 
+```sh docker/compose/dev/php7.0+apache+postgres9.5/back/stop.sh``` 
 
 Результат можно посомтреть тут: http://app.local
 
