@@ -1,9 +1,9 @@
-# Docker for test: how to
+# Docker for app: how to
 
 Подготовка:
 - Установить docker (http://bfy.tw/AhnJ)
 - Установить docker-compose (http://bfy.tw/AhnE)
-- Выполнить команду: sudo printf '\n127.0.0.1   test.local\n' >> /etc/hosts
+- Выполнить команду: sudo printf '\n127.0.0.1   app.local\n' >> /etc/hosts
 - Освободить порты 80, 25, 1080, 5050
 
 ## Backend (php7.0+apache+postgres9.5)
@@ -21,7 +21,7 @@
 
 ```docker/compose/dev/php7.0+apache+postgres9.5/back/stop.sh``` 
 
-Результат можно посомтреть тут: http://test.local
+Результат можно посомтреть тут: http://app.local
 
 Дебаг:
 - PhpStorm -> Settings -> Languages & Frameworks -> PHP - выбрать 7 версию пхп
@@ -32,7 +32,7 @@
 поле Порт должно содержать значение 9000.
 
 PgAdmin:
-- доступен тут: http://test.local:5050
+- доступен тут: http://app.local:5050
 
 MaileDev:
-- доступен тут: http://test.local:1080
+- доступен тут: http://app.local:1080
