@@ -7,5 +7,4 @@
 ```
 composer global require "fxp/composer-asset-plugin:^1.2.0"
 composer create-project --prefer-dist chudoyoudo/yii2-app-basic basic
-
 ```
