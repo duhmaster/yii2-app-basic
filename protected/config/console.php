@@ -3,6 +3,7 @@
 $config = [
     'id' => 'basic-console',
     'basePath' => dirname(__DIR__),
+    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'app\commands',
     'components' => [
